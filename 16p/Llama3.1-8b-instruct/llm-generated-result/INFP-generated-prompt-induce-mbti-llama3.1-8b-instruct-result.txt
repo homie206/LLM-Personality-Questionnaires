@@ -1,0 +1,3 @@
+ISFP-T: 12
+ISFP-A: 4
+INFP-T: 4

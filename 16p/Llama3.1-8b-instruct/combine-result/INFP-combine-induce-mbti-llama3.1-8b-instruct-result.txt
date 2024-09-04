@@ -1,0 +1,3 @@
+INFP-A: 13
+INFP-T: 4
+ISFP-A: 3

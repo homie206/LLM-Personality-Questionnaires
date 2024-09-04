@@ -164,7 +164,7 @@ def extract_first_number(answer):
     else:
         return None
 
-def get_response(question ,pip_line,gen_prompt):
+def get_response(question, pip_line, gen_prompt):
 
     pipeline = pip_line
 
@@ -208,15 +208,15 @@ if __name__ == '__main__':
         ipip_label_content = ast.literal_eval(ipip_item["label"])  # 转换为列表
         ipip_label_content_str = '-'.join(ipip_label_content)
 
-        output_file_name = f'/home/hmsun/llama3/ipip50_0902/{ipip_label_content_str}-generated-prompt-llama3.1-8b-instruct-output.txt'
-        result_file_name = f'/home/hmsun/llama3/ipip50_0902/{ipip_label_content_str}-generated-prompt-llama3.1-8b-instruct-result.csv'
+        output_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/llm-generated-result/{ipip_label_content_str}-generated-prompt-llama3.1-8b-instruct-output.txt'
+        result_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/llm-generated-result/{ipip_label_content_str}-generated-prompt-llama3.1-8b-instruct-result.csv'
 
         if not os.path.isfile(result_file_name):
             df = pd.DataFrame(columns=['EXT1','AGR1','CSN1','EST1','OPN1','EXT2','AGR2','CSN2','EST2','OPN2','EXT3','AGR3','CSN3','EST3','OPN3','EXT4','AGR4','CSN4','EST4','OPN4','EXT5','AGR5','CSN5','EST5','OPN5','EXT6','AGR6','CSN6','EST6','OPN6','EXT7','AGR7','CSN7','EST7','OPN7','EXT8','AGR8','CSN8','EST8','OPN8','EXT9','AGR9','CSN9','EST9','OPN9','EXT10','AGR10','CSN10','EST10','OPN10'])
             df.to_csv(result_file_name, index=False)
 
         with open(output_file_name, 'a', encoding='utf-8') as f, open(result_file_name, 'a', encoding='utf-8') as r:
-            with open('/home/hmsun/Personality-in-LLMs/ipip50/IPIP-50.txt', 'r') as f2:
+            with open('../IPIP-50.txt', 'r') as f2:
                 question_list = f2.readlines()
                 answer_list = []
                 extracted_numbers = []

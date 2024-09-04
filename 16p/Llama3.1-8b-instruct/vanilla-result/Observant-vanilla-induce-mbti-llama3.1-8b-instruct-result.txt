@@ -1,0 +1,5 @@
+ISFP-A: 11
+ISTP-A: 7
+Code: 1
+ISTJ-A: 1
+ISFJ-A: 1

@@ -1,0 +1,4 @@
+ISFP-A: 16
+INFP-A: 2
+ISFP-T: 2
+Code: 1

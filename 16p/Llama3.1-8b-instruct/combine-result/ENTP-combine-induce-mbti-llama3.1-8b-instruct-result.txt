@@ -1,0 +1,2 @@
+ESTP-A: 10
+ENTP-A: 10

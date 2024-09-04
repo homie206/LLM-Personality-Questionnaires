@@ -1,0 +1,4 @@
+ISTP-A: 9
+INTP-A: 7
+ESTP-A: 3
+ENTP-A: 1

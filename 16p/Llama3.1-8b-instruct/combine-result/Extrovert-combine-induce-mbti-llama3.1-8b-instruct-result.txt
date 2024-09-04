@@ -1,0 +1,3 @@
+ESFP-A: 14
+ESTP-A: 6
+Code: 1

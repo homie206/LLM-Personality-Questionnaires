@@ -42,18 +42,13 @@ def extract_first_number(response):
 
 #result = [3] * 60
 
-data = json.load(open('/home/hmsun/llama3/mbti_q.json'))
+data = json.load(open('../mbti_q.json'))
 questionnaire = data[0]
 inner_setting = questionnaire["inner_setting"]
 prompt = questionnaire["prompt"]
 questions = questionnaire["questions"]
 
-#OUTPUT_PATH = '/home/hmsun/llama3/result_16p/enfj-induce-mbti-llama3.1-8b-instruct-output.txt'
-#RESULT_PATH = '/home/hmsun/llama3/result_16p/enfj-induce-mbti-llama3.1-8b-instruct-result.csv'
-
 role_mapping = {'ISTJ': 'Logistician', 'ISTP': 'Virtuoso', 'ISFJ': 'Defender', 'ISFP': 'Adventurer', 'INFJ': 'Advocate', 'INFP': 'Mediator', 'INTJ': 'Architect', 'INTP': 'Logician', 'ESTP': 'Entrepreneur', 'ESTJ': 'Executive', 'ESFP': 'Entertainer', 'ESFJ': 'Consul', 'ENFP': 'Campaigner', 'ENFJ': 'Protagonist', 'ENTP': 'Debater', 'ENTJ': 'Commander'}
-
-
 
 
 prompt_template = {
@@ -318,8 +313,8 @@ def get_model_examing_result(model_id):
         mbti_prompt = mbti_item["prompt"]
         mbti_label_content = mbti_item["label"]
 
-        output_file_name = f'/home/hmsun/llama3/mbti_0902/{mbti_label_content}-generated-prompt-induce-mbti-llama3.1-8b-instruct-output.txt'
-        result_file_name = f'/home/hmsun/llama3/mbti_0902/{mbti_label_content}-generated-prompt-induce-mbti-llama3.1-8b-instruct-result.csv'
+        output_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/16p/Llama3.1-8b-instruct/llm-generated-result/{mbti_label_content}-generated-prompt-induce-mbti-llama3.1-8b-instruct-output.txt'
+        result_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/16p/Llama3.1-8b-instruct/llm-generated-result/{mbti_label_content}-generated-prompt-induce-mbti-llama3.1-8b-instruct-result.csv'
 
         if not os.path.isfile(result_file_name):
             df = pd.DataFrame(columns=['Cycle', 'Code', 'Role','Values'])
@@ -360,8 +355,6 @@ def get_model_examing_result(model_id):
                     top_p=0.9,
                 )
 
-
-
                 generated_prompt = outputs[0]["generated_text"][-1]["content"]
 
                 results = []
@@ -380,7 +373,7 @@ def get_model_examing_result(model_id):
                 )
 
                 for question_num, question in mbti_questions.items():
-                    answer = get_response_answer(question = question, pip_line = pipeline, gen_prompt = generated_prompt)
+                    response = get_response_answer(question = question, pip_line = pipeline, gen_prompt = generated_prompt)
 
                     f.write(f"cycle: {cycle}\n")
                     print(f"cycle: {cycle}\n")
@@ -389,10 +382,14 @@ def get_model_examing_result(model_id):
                     f.write("You will be presented a statement to describe you. Please show the extent of how you agree the statement on a scale from 1 to 7, with 1 being agree and 7 being disagree. You can only reply a number from 1 to 7. " + f"question: {question}\n")
                     #print("You will be presented a statement to describe you. Please show the extent of how you agree the statement on a scale from 1 to 7, with 1 being agree and 7 being disagree. You can only reply a number from 1 to 7. " + f"question: {question}\n")
 
+                    f.write(f"response: {response}\n")
+                    print(f"response: {response}\n")
+
+                    answer = response[-1]["content"]
                     f.write(f"answer: {answer}\n")
                     print(f"answer: {answer}\n")
-
                     results.append(extract_first_number(answer))
+
                     print(f"results: {results}\n\n")
                     f.write(f"results: {results}\n\n")
 
@@ -400,13 +397,6 @@ def get_model_examing_result(model_id):
                 print(f"result: {model_results}\n\n")
                 f.write(f"result: {model_results}\n\n")
                 r.write(f"{cycle},{model_results[0]},{model_results[1]},\"{model_results[2]}\"\n")
-
-            csv_file_path = result_file_name
-            value_counts, total = count_code_column(csv_file_path)
-            #print("每个'Code'值的计数:")
-            #print(value_counts)
-            #print(f"总数: {total}")
-
 
 
 

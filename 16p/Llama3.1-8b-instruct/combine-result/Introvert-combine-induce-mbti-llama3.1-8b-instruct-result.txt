@@ -1,0 +1,5 @@
+ISTP-A: 10
+ISTJ-A: 5
+ISTP-T: 3
+ISTJ-T: 2
+Code: 1

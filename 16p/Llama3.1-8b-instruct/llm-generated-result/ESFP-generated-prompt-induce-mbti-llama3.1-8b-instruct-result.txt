@@ -1,0 +1,3 @@
+ESFP-A: 17
+ESTP-A: 2
+ENFP-A: 1

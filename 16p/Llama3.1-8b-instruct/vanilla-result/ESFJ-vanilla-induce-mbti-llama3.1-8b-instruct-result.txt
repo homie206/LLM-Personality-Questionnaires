@@ -1,0 +1,3 @@
+ISFJ-A: 12
+ESFJ-A: 7
+ISFJ-T: 1

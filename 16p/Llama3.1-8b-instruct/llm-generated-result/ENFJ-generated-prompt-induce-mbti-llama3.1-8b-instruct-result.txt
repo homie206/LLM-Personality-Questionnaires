@@ -1,0 +1,7 @@
+ESFJ-A: 6
+ISFP-A: 4
+ISFJ-A: 3
+ESFJ-T: 3
+ESFP-A: 2
+ESFP-T: 1
+ISFJ-T: 1

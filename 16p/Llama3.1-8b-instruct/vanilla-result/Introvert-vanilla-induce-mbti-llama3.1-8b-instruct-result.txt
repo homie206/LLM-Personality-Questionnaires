@@ -1,0 +1,3 @@
+ISTP-A: 19
+Code: 1
+ISTP-T: 1

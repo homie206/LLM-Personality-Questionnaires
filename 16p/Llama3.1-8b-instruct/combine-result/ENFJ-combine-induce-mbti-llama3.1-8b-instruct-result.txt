@@ -1,0 +1,5 @@
+ESFJ-A: 8
+ENFJ-A: 7
+ESFJ-T: 3
+ESFP-A: 1
+ENFJ-T: 1

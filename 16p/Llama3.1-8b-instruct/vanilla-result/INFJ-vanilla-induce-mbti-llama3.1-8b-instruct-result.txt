@@ -1,0 +1,3 @@
+INFP-A: 17
+ISFP-A: 2
+ISFP-T: 1

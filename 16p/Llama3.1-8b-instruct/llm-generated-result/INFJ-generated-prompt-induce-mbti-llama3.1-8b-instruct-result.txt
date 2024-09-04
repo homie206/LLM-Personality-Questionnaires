@@ -1,0 +1,4 @@
+ISFP-A: 15
+ISFP-T: 3
+ISFJ-T: 1
+INFP-A: 1

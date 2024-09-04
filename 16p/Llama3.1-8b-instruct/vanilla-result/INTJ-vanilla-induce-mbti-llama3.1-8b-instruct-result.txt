@@ -1,0 +1,3 @@
+ISTJ-A: 14
+INTJ-A: 5
+ISTP-A: 1

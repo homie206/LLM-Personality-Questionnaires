@@ -1,0 +1,4 @@
+ENFP-A: 14
+ESFP-A: 4
+ENTP-A: 1
+ENFP-T: 1

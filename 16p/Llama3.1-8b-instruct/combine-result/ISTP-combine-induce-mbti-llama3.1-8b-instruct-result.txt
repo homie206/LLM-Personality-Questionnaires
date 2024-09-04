@@ -1,0 +1,2 @@
+ISTP-A: 16
+ISTJ-A: 4

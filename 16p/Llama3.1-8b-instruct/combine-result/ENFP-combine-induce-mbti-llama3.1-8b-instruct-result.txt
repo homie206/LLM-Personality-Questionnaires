@@ -1,0 +1,3 @@
+ENFP-A: 15
+ESFP-A: 4
+ESFP-T: 1

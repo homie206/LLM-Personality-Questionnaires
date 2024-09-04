@@ -1,0 +1,2 @@
+INTP-A: 17
+ISTP-A: 3

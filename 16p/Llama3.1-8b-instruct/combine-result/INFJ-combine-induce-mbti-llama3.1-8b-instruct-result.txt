@@ -1,0 +1,5 @@
+INFJ-T: 6
+INFJ-A: 5
+ISFJ-A: 4
+ISFJ-T: 3
+INFP-A: 2
