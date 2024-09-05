@@ -1,0 +1,5 @@
+ESFP-A: 12
+ISFP-A: 4
+ESFP-T: 2
+ISFP-T: 1
+ESTP-A: 1

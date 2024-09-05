@@ -1,0 +1,4 @@
+ESTP-A: 9
+ISTP-A: 6
+ESTJ-A: 4
+ISTJ-A: 1

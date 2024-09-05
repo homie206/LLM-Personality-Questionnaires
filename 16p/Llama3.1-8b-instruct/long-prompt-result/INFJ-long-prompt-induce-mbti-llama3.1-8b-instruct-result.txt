@@ -1,0 +1,5 @@
+ISFP-T: 9
+ISFP-A: 8
+ISTJ-A: 1
+ISFJ-A: 1
+ISTP-A: 1

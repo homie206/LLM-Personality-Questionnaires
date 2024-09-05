@@ -1,0 +1,4 @@
+ISFP-A: 12
+ISFJ-A: 6
+ISTJ-A: 1
+ISTP-A: 1
