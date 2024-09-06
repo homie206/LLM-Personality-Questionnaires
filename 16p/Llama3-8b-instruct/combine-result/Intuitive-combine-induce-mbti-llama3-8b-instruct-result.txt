@@ -1,0 +1,3 @@
+INTP-A: 15
+ISTP-A: 5
+Code: 1

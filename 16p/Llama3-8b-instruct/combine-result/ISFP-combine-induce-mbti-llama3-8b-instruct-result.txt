@@ -1,0 +1,2 @@
+ISFP-A: 16
+INFP-A: 4

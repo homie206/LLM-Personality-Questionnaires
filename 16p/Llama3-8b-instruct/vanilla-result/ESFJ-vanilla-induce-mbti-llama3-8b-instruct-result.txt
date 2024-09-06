@@ -1,0 +1,5 @@
+ISFJ-A: 8
+ESFJ-A: 7
+ISTJ-A: 3
+ESTJ-A: 1
+ISTP-A: 1

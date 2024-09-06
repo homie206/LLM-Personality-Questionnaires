@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # 设置文件夹路径
-folder_path = '/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/llm-generated-result'
+folder_path = '/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/new-combined-result'
 
 # 初始化结果字典
 results = {}

@@ -1,0 +1,3 @@
+ISTP-T: 10
+ISTP-A: 9
+ISTJ-T: 1

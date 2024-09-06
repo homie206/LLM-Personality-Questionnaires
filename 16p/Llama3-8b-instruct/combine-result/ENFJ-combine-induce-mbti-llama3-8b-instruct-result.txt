@@ -1,0 +1,3 @@
+ESFJ-A: 15
+ESFP-A: 4
+ENFJ-A: 1

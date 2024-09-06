@@ -1,0 +1,2 @@
+INTP-A: 11
+ISTP-A: 9

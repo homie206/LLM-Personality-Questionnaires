@@ -1,0 +1,3 @@
+ISTP-A: 18
+ISFP-A: 2
+Code: 1

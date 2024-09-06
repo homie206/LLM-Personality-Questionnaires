@@ -1,0 +1,17 @@
+平均位置：
+
+EXT_position    28.709325
+EST_position    58.135799
+AGR_position    52.165149
+CSN_position    46.788025
+OPN_position    59.348825
+
+平均位置高低：
+
+{'EXT_position': 'low', 'EST_position': 'high', 'AGR_position': 'high', 'CSN_position': 'low', 'OPN_position': 'high'}
+
+高低统计：
+
+      EXT_high_or_low  EST_high_or_low  AGR_high_or_low  CSN_high_or_low  OPN_high_or_low
+high              0.0               14                8                8               11
+low              20.0                6               12               12                9

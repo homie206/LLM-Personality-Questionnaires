@@ -1,0 +1,7 @@
+ESFP-A: 11
+ISFP-A: 3
+ENFP-A: 2
+INFP-A: 1
+INTP-A: 1
+ISTP-A: 1
+ESTP-A: 1

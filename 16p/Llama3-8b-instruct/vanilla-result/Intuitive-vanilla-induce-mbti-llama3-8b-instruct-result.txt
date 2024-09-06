@@ -1,0 +1,4 @@
+ISFP-A: 15
+INFP-A: 3
+ISTP-A: 2
+Code: 1

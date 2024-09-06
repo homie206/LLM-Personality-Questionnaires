@@ -1,0 +1,2 @@
+INTP-A: 13
+ISTP-A: 7

@@ -97,7 +97,7 @@ def cal_test_position(test_score, df):
 
 
 if __name__ == '__main__':
-    result_dir = '//home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/vanilla-result'
+    result_dir = '/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/new-combined-result'
     for filename in os.listdir(result_dir):
         if filename.endswith('.csv'):
             file_path = os.path.join(result_dir, filename)
