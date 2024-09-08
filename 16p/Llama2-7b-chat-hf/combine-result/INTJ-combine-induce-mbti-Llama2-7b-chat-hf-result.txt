@@ -1,0 +1,2 @@
+ESTP-A: 16
+ISTP-A: 4

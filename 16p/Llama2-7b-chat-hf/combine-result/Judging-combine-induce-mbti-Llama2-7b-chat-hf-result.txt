@@ -1,0 +1,6 @@
+ISTP-A: 9
+ESTP-A: 7
+INTP-T: 2
+Code: 1
+ENTP-A: 1
+INTP-A: 1

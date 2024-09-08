@@ -1,0 +1,4 @@
+ISTJ-A: 11
+ISTP-A: 8
+Code: 1
+ESTP-A: 1

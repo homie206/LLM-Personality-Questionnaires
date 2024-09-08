@@ -1,0 +1,6 @@
+ENFP-A: 9
+ESFP-A: 8
+Code: 1
+ENTP-A: 1
+ESTP-A: 1
+ISFP-A: 1

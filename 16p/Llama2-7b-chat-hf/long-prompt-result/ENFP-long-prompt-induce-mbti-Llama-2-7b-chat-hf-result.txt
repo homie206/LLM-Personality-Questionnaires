@@ -1,0 +1,2 @@
+ISTP-A: 10
+ISTJ-A: 10

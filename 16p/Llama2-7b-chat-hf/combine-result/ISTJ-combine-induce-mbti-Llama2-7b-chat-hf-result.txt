@@ -1,0 +1,3 @@
+ESTP-A: 17
+ISTP-A: 2
+INFP-A: 1

@@ -1,0 +1,3 @@
+ISTJ-A: 10
+ISTP-A: 10
+Code: 1

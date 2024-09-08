@@ -1,0 +1,3 @@
+ISFP-A: 14
+ISTP-A: 5
+ESFP-A: 1
