@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # 设置文件夹路径
-folder_path = '/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/new-combined-result'
+folder_path = '/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/combined-result-0909'
 
 # 初始化结果字典
 results = {}
@@ -13,7 +13,7 @@ for file_name in os.listdir(folder_path):
         file_path = os.path.join(folder_path, file_name)
 
         # 提取文件名中的部分，去掉最后的 '-combined-ipip50'
-        file_name_part = '-'.join(file_name.split('-')[:-6]).lower()  # 提取并转换为小写
+        file_name_part = '-'.join(file_name.split('-')[:-9]).lower()  # 提取并转换为小写
 
         # 读取 CSV 文件
         data = pd.read_csv(file_path)
@@ -23,7 +23,7 @@ for file_name in os.listdir(folder_path):
         for index, row in data.iterrows():
             # 生成字符串，用于与文件名比较并转换为小写
             generated_string = f"E-{row['EXT_high_or_low']}-N-{row['EST_high_or_low']}-A-{row['AGR_high_or_low']}-C-{row['CSN_high_or_low']}-O-{row['OPN_high_or_low']}".lower()
-            # generated_string = f"E-{row['EXT_high_or_low']}".lower()
+            #generated_string = f"E-{row['EXT_high_or_low']}".lower()
             # generated_string = f"N-{row['EST_high_or_low']}".lower()
             # generated_string = f"A-{row['AGR_high_or_low']}".lower()
             # generated_string = f"C-{row['CSN_high_or_low']}".lower()

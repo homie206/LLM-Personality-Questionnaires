@@ -1,0 +1,54 @@
+prompting: Please generate 50 adjectives to describe such person: Intuitive individuals are very imaginative, open-minded and curious. They prefer novelty over stability and focus on hidden meanings and future possibilities.generated_text: [{'role': 'user', 'content': 'Please generate 50 adjectives to describe such person: Intuitive individuals are very imaginative, open-minded and curious. They prefer novelty over stability and focus on hidden meanings and future possibilities.'}, {'role': 'assistant', 'content': 'Here are 50 adjectives that describe intuitive individuals:\n\n1. Imaginative\n2. Open-minded\n3. Curious\n4. Innovative\n5. Visionary\n6. Insightful\n7. Introspective\n8. Analytical\n9. Imaginal\n10. Creative\n11. Artistic\n12. Expressive\n13. Sensitive\n14. Empathetic\n15. Perceptive\n16. Attuned\n17. Attentive\n18. Observant\n19. Discerning\n20. Introspective\n21. Contemplative\n22. Reflective\n23. Thoughtful\n24. Imaginative\n25. Visionary\n26. Forward-thinking\n27. Progressive\n28. Adventurous\n29. Spontaneous\n30. Flexible\n31. Adaptable\n32. Open-ended\n33. Non-conformist\n34. Experimental\n35. Risk-taking\n36. Bold\n37. Courageous\n38. Confident\n39. Self-assured\n40. Authentic\n41. Genuine\n42. Sincere\n43. Honest\n44. Transparent\n45. Communicative\n46. Expressive\n47. Articulate\n48. Poetic\n49. Dreamy\n50. Envisioning'}]
+answer: Here are 50 adjectives that describe intuitive individuals:
+
+1. Imaginative
+2. Open-minded
+3. Curious
+4. Innovative
+5. Visionary
+6. Insightful
+7. Introspective
+8. Analytical
+9. Imaginal
+10. Creative
+11. Artistic
+12. Expressive
+13. Sensitive
+14. Empathetic
+15. Perceptive
+16. Attuned
+17. Attentive
+18. Observant
+19. Discerning
+20. Introspective
+21. Contemplative
+22. Reflective
+23. Thoughtful
+24. Imaginative
+25. Visionary
+26. Forward-thinking
+27. Progressive
+28. Adventurous
+29. Spontaneous
+30. Flexible
+31. Adaptable
+32. Open-ended
+33. Non-conformist
+34. Experimental
+35. Risk-taking
+36. Bold
+37. Courageous
+38. Confident
+39. Self-assured
+40. Authentic
+41. Genuine
+42. Sincere
+43. Honest
+44. Transparent
+45. Communicative
+46. Expressive
+47. Articulate
+48. Poetic
+49. Dreamy
+50. Envisioning
+

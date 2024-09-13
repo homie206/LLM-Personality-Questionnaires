@@ -169,13 +169,7 @@ def get_response(q, pip_line):
 
         messages = [
             {"role": "system", "content":"Imagine you are a human. " + ipip_prompt },
-            {"role": "user", "content": '''Given a statement of you. Please choose from the following options to identify how accurately this statement describes you. 
-                            1. Very Inaccurate
-                            2. Moderately Inaccurate 
-                            3. Neither Accurate Nor Inaccurate
-                            4. Moderately Accurate
-                            5. Very Accurate
-                            Please only answer with the option number. \nHere is the statement: ''' + q }
+            {"role": "user", "content": "Given a statement, please indicate whether it is 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate as a description of you. Please only answer with the option number. \n Here is the statement: " + q }
         ]
 
         terminators = [
@@ -201,14 +195,14 @@ def get_response(q, pip_line):
 if __name__ == '__main__':
     model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
 
-    for ipip_item in prompt_template["ipip50_prompt"]:
+    for ipip_item in prompt_template["ipip50_prompt"][:2]:
         ipip_prompt = ipip_item["prompt"]
         #ipip_label_content = ipip_item["label"]
         ipip_label_content = ast.literal_eval(ipip_item["label"])  # 转换为列表
         ipip_label_content_str = '-'.join(ipip_label_content)
 
-        output_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/new-combined-result/{ipip_label_content_str}-new-combined-ipip50-llama3.1-8b-instruct-output.txt'
-        result_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/new-combined-result/{ipip_label_content_str}-new-combined-ipip50-llama3.1-8b-instruct-result.csv'
+        output_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/combined-result-0909/{ipip_label_content_str}-new-combined-result-0909-ipip50-llama3.1-8b-instruct-output.txt'
+        result_file_name = f'/home/hmsun/LLM-Personality-Questionnaires/ipip50/Llama3.1-8b-instruct/combined-result-0909/{ipip_label_content_str}-new-combined-result-0909-ipip50-llama3.1-8b-instruct-result.csv'
 
         if not os.path.isfile(result_file_name):
             df = pd.DataFrame(columns=['EXT1','AGR1','CSN1','EST1','OPN1','EXT2','AGR2','CSN2','EST2','OPN2','EXT3','AGR3','CSN3','EST3','OPN3','EXT4','AGR4','CSN4','EST4','OPN4','EXT5','AGR5','CSN5','EST5','OPN5','EXT6','AGR6','CSN6','EST6','OPN6','EXT7','AGR7','CSN7','EST7','OPN7','EXT8','AGR8','CSN8','EST8','OPN8','EXT9','AGR9','CSN9','EST9','OPN9','EXT10','AGR10','CSN10','EST10','OPN10'])
@@ -221,7 +215,7 @@ if __name__ == '__main__':
                 extracted_numbers = []
                 all_results = []
 
-                for run in range(20):  # 运行100次
+                for run in range(10):  # 运行100次
 
                     try:
                         del pipeline
@@ -254,21 +248,9 @@ if __name__ == '__main__':
                         f.write(f"prompting: Imagine you are a human. {ipip_prompt}\n")
                         print(f"prompting: Imagine you are a human. {ipip_prompt}\n")
                         f.write(
-                            '''Given a statement of you. Please choose from the following options to identify how accurately this statement describes you. 
-                                1. Very Inaccurate
-                                2. Moderately Inaccurate 
-                                3. Neither Accurate Nor Inaccurate
-                                4. Moderately Accurate
-                                5. Very Accurate
-                                Please only answer with the option number. \nHere is the statement: ''' + q)
+                            "Given a statement, please indicate whether it is 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate as a description of you. Please only answer with the option number. \n Here is the statement: " + q)
                         print(
-                            '''Given a statement of you. Please choose from the following options to identify how accurately this statement describes you. 
-                                1. Very Inaccurate
-                                2. Moderately Inaccurate 
-                                3. Neither Accurate Nor Inaccurate
-                                4. Moderately Accurate
-                                5. Very Accurate
-                                Please only answer with the option number. \nHere is the statement: ''' + q)
+                            "Given a statement, please indicate whether it is 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate as a description of you. Please only answer with the option number. \n Here is the statement: " + q)
                         f.write(answer + '\n')
                         print(answer + '\n')
 
